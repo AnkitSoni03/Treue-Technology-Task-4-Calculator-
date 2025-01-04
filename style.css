@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,24 +6,24 @@
     letter-spacing: 1px;
 }
 
-body{
-     min-height: 100vh;
-     max-width: 100%;
-     display: flex;
-     justify-content: center;
-     justify-items: center;
-     place-items: center;
-     background: linear-gradient(45deg, #000000, #ffffff);
+body {
+    min-height: 100vh;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    place-items: center;
+    background: linear-gradient(45deg, #000000, #ffffff);
 }
 
-.calculator{
+.calculator {
     padding: 15px;
-    box-shadow:0 0 15px #000000 ;
+    box-shadow: 0 0 15px #000000;
     border: 2px solid rgb(198, 195, 195);
     border-radius: 20px;
 }
 
-.display input{
+.display input {
     width: 360px;
     border: none;
     outline: none;
@@ -36,11 +36,11 @@ body{
     cursor: pointer;
 }
 
-input::placeholder{
+input::placeholder {
     color: #ffffff;
 }
 
-button{
+button {
     width: 70px;
     height: 70px;
     margin: 10px;
@@ -51,23 +51,61 @@ button{
     border: 0;
     border-radius: 50%;
     box-shadow: -5px -6px 15px #000;
-    outline: 1px solid  #313131;
+    outline: 1px solid #313131;
     outline-offset: 3px;
     cursor: pointer;
 }
 
-button:active{
+button:active {
     background: #000;
     transform: translate(2px, 2px);
 }
 
-.opr{
+.opr {
     color: #fbff00;
     background: #1e1919;
     font-weight: 700;
 }
 
-.abc{
+.abc {
     background: orangered;
     font-weight: 900;
+}
+
+@media screen and (max-width: 768px) {
+    .display input {
+        width: 300px;
+        font-size: 30px;
+        padding: 20px;
+    }
+
+    button {
+        width: 60px;
+        height: 60px;
+        font-size: 18px;
+        margin: 8px;
+    }
+
+    .calculator {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .display input {
+        width: 250px;
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    button {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+        margin: 5px;
+    }
+
+    .calculator {
+        padding: 8px;
+    }
 }
